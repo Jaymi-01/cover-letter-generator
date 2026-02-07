@@ -3,18 +3,20 @@
 import { useState, useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card } from '@/components/ui/card';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import { HugeiconsIcon } from '@hugeicons/react';
+import { jsPDF } from 'jspdf';
 import {
   Copy01Icon, 
   Download01Icon, 
   CheckmarkCircle02Icon,
-  FileDocumentIcon,
+  File01Icon as FileDocumentIcon,
   Briefcase02Icon,
   SparklesIcon,
   JobSearchIcon,
   LegalDocumentIcon,
-  CursorMagicIcon
+  Cursor01Icon as CursorMagicIcon
 } from '@hugeicons/core-free-icons';
 
 export default function CoverLetterGenerator() {
